@@ -6,6 +6,7 @@ class SpatialiteGis < Formula
   sha1 "45508b27fbdc7166ef874ce3f79216d6c01f3c4f"
 
   depends_on "pkg-config" => :build
+  depends_on "sqlite"
   depends_on "freexl"
   depends_on "geos"
   depends_on "libharu"
@@ -31,6 +32,7 @@ class SpatialiteGis < Formula
 
     # These libs don"t get picked up by configure.
     ENV.append "LDFLAGS", "-liconv"
+    ENV.append "LDFLAGS", "-lsqlite3"
 
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
