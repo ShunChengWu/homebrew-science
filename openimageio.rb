@@ -11,6 +11,7 @@ class Openimageio < Formula
   option "with-test", "Dowload 95MB of test images and verify Oiio (~2 min)"
   option "with-jpeg-turbo", "Build with libjpeg-turbo support, instead of libjpeg"
 
+  depends_on "ccache" => :build
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "boost"
