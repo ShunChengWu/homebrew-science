@@ -96,6 +96,7 @@ class Openimageio < Formula
     ENV.append "MY_CMAKE_FLAGS", "-DCMAKE_FIND_FRAMEWORK=LAST"
     ENV.append "MY_CMAKE_FLAGS", "-DCMAKE_VERBOSE_MAKEFILE=ON"
     ENV.append "MY_CMAKE_FLAGS", "-DUSE_NUKE=OFF"
+    ENV.append "MY_CMAKE_FLAGS", "-DCCACHE_FOUND=CCACHE_FOUND-NOTFOUND"
 
     ENV.append "MY_CMAKE_FLAGS", "-DUSE_FFMPEG=OFF" if build.without? "ffmpeg"
     ENV.append "MY_CMAKE_FLAGS", "-DUSE_LIBRAW=OFF" if build.without? "libraw"
