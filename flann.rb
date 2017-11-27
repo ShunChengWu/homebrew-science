@@ -3,7 +3,7 @@ require "formula"
 class Flann < Formula
   homepage "http://www.cs.ubc.ca/~mariusm/index.php/FLANN/FLANN"
   url "http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann-1.8.4-src.zip"
-  sha1 "e03d9d458757f70f6af1d330ff453e3621550a4f"
+  sha256 "dfbb9321b0d687626a644c70872a2c540b16200e7f4c7bd72f91ae032f445c08"
 
   deprecated_option "enable-matlab" => "with-octave"
   deprecated_option "enable-python" => "with-python"
